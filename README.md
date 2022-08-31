@@ -12,10 +12,10 @@
 ```
 <div id="widget-root"></div>
  <script>
-   const chatScript = document.createElement("script");
-   chatScript.type = "text/javascript";
+   const widgetScript = document.createElement("script");
+   widgetScript.type = "text/javascript";
    const env = "your_link_integration.js";
-   chatScript.src = env;
-   document.body.appendChild(chatScript);
+   widgetScript.src = env;
+   document.body.appendChild(widgetScript);
  </script>
 ```
