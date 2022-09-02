@@ -1,4 +1,4 @@
-function App() {
+function App({ config }) {
   return <div className="wrapper">Widget</div>;
 }
 

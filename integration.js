@@ -10,7 +10,7 @@ function widgetIntegration() {
   var script0 = document.createElement('script');
   script0.type = 'text/javascript';
   script0.src =
-    'http://localhost:8000/widget-template/deploy/static/js/main.0170b877.js';
+    'http://localhost:8000/widget-template/deploy/static/js/main.68e4cf80.js';
 
   window.widget = {
     init: (wrapper) => {
@@ -19,7 +19,7 @@ function widgetIntegration() {
     },
     config: (options) => {
       const root = document.getElementById('widget-root');
-      root.setAttribute('config', options);
+      root.setAttribute('config', JSON.stringify(options));
     },
   };
 }

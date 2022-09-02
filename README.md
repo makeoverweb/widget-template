@@ -5,8 +5,8 @@
 1. `npm ci`
 2. `npm run build`
 3. place the entire deploy folder on a remote server
-4. in the deploy/integration.js specify paths to chunk.main.js and chunk.main.css
-5. take a link to deploy/integration.js
+4. in the integration.js specify paths to chunk.main.js and chunk.main.css from deploy/static
+5. take a link to integration.js
 6. in any other application, connect in .html file using
 
 ```
@@ -36,5 +36,13 @@ function App() {
     </div>
   );
 }
+
+```
+
+you can also pass the settings to control the widget
+
+```
+
+widget.config({width: 100%, height: 100%});
 
 ```
